@@ -1,163 +1,213 @@
 <html>
-    <head>
-    <style> 
-    /*------لون الصفحة-----*/
-    body{
-        background-color:lavenderblush;
-    }
-    /*------عنوان------*/
-    .j{
-        color:lightyellow;
-    }
-    h1{
-        text-align:center;
-        color:lightpink;
-        animation-name:move;
-        animation-direction: 2s;
-        font-size:80px;
-    }
-    
-    h1:hover{
-        color:deeppink;
-        transform:scale(0.5);
-        
-    }
-    h2{
-        color:lightpink;
-          text-align:center;
-          font-size:30px;
+<head>
+    <title>JO EYEWEAR</title>
 
+    <style>
+        /*------ لون الصفحة ------*/
+        body{
+            background-color:#FAF5F1;
+            font-family:Arial, sans-serif;
+            margin:0;
+            padding:0px;
+        }
 
-    }
-    /*--------------------*/
-    /*------عباره للموقع------*/
-    .p{
-        color:lightpink;
-        box-shadow:5px 5px 10px lightpink;
-                text-align:center;
-                font-size:30px;
+        /*------ العنوان ------*/
+        .j{
+            color:#C78FA5;
+        }
 
+        h1{
+            text-align:center;
+            color:#49383F;
+            font-size:65px;
+            letter-spacing:5px;
+            margin-top:60px;
+            margin-bottom:10px;
+        }
 
-    }
-    .p:hover{
-        color:deeppink;
-    }
-    /*--------------------*/
-    /*------الصوره---------*/
-    .img1{
-        width:300px;
-        height:auto;
-        box-shadow:5px -5px 10px lightpink;
-        padding:20px ;
-        margin:50px ;
+        h1:hover{
+            color:#C78FA5;
+            transform:scale(1.03);
+            transition:0.3s;
 
-    }
-    /*-----------------*/
-    /*------المنتجات----*/
-    .productsall{
-        display:flex;
-        flex-direction:row;
-        justify-content:center;
-        justify-content:space-evenly;
-        gap:15px;
-        border:5px solid lightpink;
-         box-shadow:5px -5px 10px lightpink;
+        }
 
-        p{
-        color:lightpink;
-    }
-        img{
-        width:300px;
-        height:auto;
-        box-shadow:5px -5px 10px lightpink;
-    }
-    /*------------------*/
-    /*------المنتجات-----*/
-    
-    .products{
-        width: 150px;
-        border:5px dotted  lightpink;
-         box-shadow:5px -5px 10px lightpink;
+        h2{
+            color:#49383F;
+            text-align:center;
+            letter-spacing:2px;
+            font-size:28px;           
+            margin-top:35px ;
+            margin-bottom:25px ;
+            
+        }
 
-        padding:15px;
-        margin: 5px;
-        buttontten{
-        color:lightyellow;
-                boder:3px solid lightyellow;
+        /*------ عبارة الموقع ------*/
+        .p{
+            color:#9B858B;
+            text-align:center;
+            font-size:15px;
+            letter-spacing:3px;
+            line-height:1.8;
+            margin-top:0;
+            transition:0.3s;
+        }
 
-    }
-    button:hover{
-        color:yellow;
-    }
-    }
-    .products:hover{
-        color:lightyellow;
-        transition: 2s;
-        transform:scale(1.1);
-        p:hover{
-        color:deeppink;
-    }
+        .p:hover{
+            color:#49383F;
+        }
 
-    }
-    /*----------------*/
-    /*------صور المنتجات----*/
-    .img{
-        width:150px;
-    }
-    img:hover{
-        color:lightyellow;
-        transition: 3s;
-        transform:scale(1.1);
-    }
-       
-    /*----------------*/
-    hr{
-        color:lightpink;
-        margin:10px;
-        box-shadow: 5px 5px 10px lightpink;
-    }
+        /*------ الصورة الرئيسية ------*/
+        .img1{
+            display:block;
+            width:500px;
+            max-width:85%;
+            height:300px;
+            object-fit:cover ;           
+            border-radius:5px;
+            margin:40px auto;
+        }
+
+        /*------ الفواصل ------*/
+        hr{
+            border:none;
+            height:1px;
+            background-color:#EBCFD9;
+            width:85%;
+            margin:25px auto;
+        }
+
+        /*------ قسم المنتجات ------*/
+        .productsall{
+            display:flex;
+            flex-direction:row;
+            justify-content:center;
+            align-items:center;
+            flex-wrap:wrap;
+            gap:25px;
+            padding:20px;
+        }
+
+        /*------ بطاقة المنتج ------*/
+        .products{
+            width:180px;
+            background-color:#F0E5E3;
+            border:1px solid #EBCFD9;
+            border-radius:15px;
+            box-shadow:0px 4px 12px #EBCFD9;
+            padding:15px;
+            margin:5px;
+            text-align:center;
+            transition:0.3s;
+        }
+
+        .products:hover{
+            transform:translateY(-8px);
+            box-shadow:0px 8px 18px #D9B5C3;
+        }
+
+        .products p{
+            color:#49383F;
+            font-size:16px;
+            margin:12px 0;
+        }
+
+        /*------ صور المنتجات ------*/
+        .img{
+            width:150px;
+            max-width:100%;
+            height:auto;
+            border-radius:10px;
+            transition:0.3s;
+        }
+
+        .img:hover{
+            transform:scale(1.05);
+        }
+
+        /*------ الأزرار ------*/
+        button{
+            background-color:#C78FA5;
+            color:white;
+            border:none;
+            padding:10px 20px;
+            border-radius:25px;
+            font-size:14px;
+            cursor:pointer;
+            transition:0.3s;
+        }
+
+        button:hover{
+            background-color:#49383F;
+            transform:translateY(-3px);
+        }
+        @media screen and (max-width:600px){
+
+        h1{
+            font-size:40px;
+        }
+
+        h2{
+            font-size:24px;
+        }
+
+        .img1{
+            max-width:85%;
+            height:auto;
+        }
+
+        .productsall{
+            flex-wrap:wrap;
+         gap:15px;
+        }
+
+        .products{
+            width:130px;
+        }
+
+        }
+
     </style>
-    </head>
+</head>
+
 <body>
-   
-<h1><span class="j">JO</span>EYEWEAR</h1>
-<p class="p">stylish eyeglass designs</p>
-<img class="img1" src="https://picsum.photos/300">
 
-<hr>
-<h2>:منتجات</h2>
-<hr>
+    <h1><span class="j">JO</span> EYEWEAR</h1>
 
+    <p class="p">stylish eyeglass designs</p>
 
-<div class="productsall">
-<div class="products">
-  <img class="img" src="https://picsum.photos/300">
-  <p>JO luna</p>
-  <p></p>
-  <p>price:150﷼</p>
-    <button>اشتر الان</button>
-</div>
+    <img class="img1" src="https://picsum.photos/300">
 
-<div class="products">
-  <img class="img" src="https://picsum.photos/300">
-  <p>JO nova</p>
-    <p></p>
-  <p>price:180﷼</p>
-    <button>اشتر الان</button>
-</div>
+    <hr>
 
-<div class="products">
-  <img class="img" src="https://picsum.photos/300">
-  <p>JO vision</p>
-    <p></p>
-  <p>price:220﷼</p>
-    <button>اشتر الان</button>
+    <h2>منتجاتنا</h2>
 
-</div>
-</div>
+    <hr>
 
+    <div class="productsall">
 
+        <div class="products">
+            <img class="img" src="https://picsum.photos/300">
+            <p>JO Luna</p>
+            <p>price: 150﷼</p>
+            <button>اشتر الآن</button>
+        </div>
 
+        <div class="products">
+            <img class="img" src="https://picsum.photos/300">
+            <p>JO Nova</p>
+            <p>price: 180﷼</p>
+            <button>اشتر الآن</button>
+        </div>
+
+        <div class="products">
+            <img class="img" src="https://picsum.photos/300">
+            <p>JO Vision</p>
+            <p>price: 220﷼</p>
+            <button>اشتر الآن</button>
+        </div>
+
+    </div>
 
 </body>
 </html>
